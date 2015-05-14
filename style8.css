@@ -1,28 +1,109 @@
 body {
 	margin: 0;
+	background-color: #b8befb;
+}
+.header-img {
+	height: 500px;
+	width: auto;
+	background-image: url("images/header-img/full.jpg");
+	background-size: cover;
+}
+.content {
+	padding-left: 10%;
+}
+.gallery {
+	height: 300px;
+	width: 300px;
+	float: left;
+	background-image: url("http://fillmurray.com/600/600");
+	background-size: cover;
+	margin: 20px;
 }
 
-@media all and (min-width: 900px){ 
+footer {
+	clear: both;
+	height: 100px;
+	text-align: center;
+	background-color: orange;
+}
 
+/*tablet*/
+@media all and (max-width: 900px){ 
+	body {
+	background-color: #61ad25;
+	}
 	.header-img {
-		height: 500px;
+		height: 300px;
 		width: auto;
-		background-image: url("");
-	}
-
-	.gallery {
-		height: 400px;
-		width: 400px;
-		float: left;
-	}
-
-	#pic-1 {
-		background-image: url("");
+		background-image: url("images/header-img/tablet.jpg");
 		background-size: cover;
+	}
+	.content {
+		padding-left: 10%;
+	}
+	.gallery {
+		height: 250px;
+		width: 250px;
+		float: left;
+		background-image: url("http://fillmurray.com/300/300");
+		background-size: cover;
+		margin: 40px;
 	}
 
 	footer {
 		clear: both;
-		background-color: orange;
+		background-color: #b8befb;
 	}
+
+}
+/*phone*/
+@media all and (max-width: 740px){ 
+	body {
+	background-color: #273c61;
+	}
+	.header-img {
+		height: 200px;
+		width: auto;
+		background-image: url("images/header-img/phone.jpg");
+		background-size: cover;
+	}
+	.content {
+		padding: 10%;
+	}
+	.gallery {
+		height: 400px;
+		width: 400px;
+		display: block;
+		float: left;
+		background-image: url("http://fillmurray.com/500/500");
+		background-size: cover;
+		margin: 40px;
+	}
+
+	footer {
+		clear: both;
+		background-color: #3fc38a;
+	}
+
+}
+@media all and (max-width: 400px){ 
+	body {
+	background-color: #273c61;
+	}
+	.header-img {
+		height: 100px;
+		width: auto;
+	}
+	.content {
+		padding: 10%;
+	}
+	.gallery {
+		height: 300px;
+		width: 300px;
+		display: block;
+		background-image: url("http://fillmurray.com/500/500");
+		background-size: cover;
+		margin: 10px 0;
+	}
+
 }

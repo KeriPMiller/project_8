@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+}
+
+@media all and (min-width: 900px){ 
+
+	.header-img {
+		height: 500px;
+		width: auto;
+		background-image: url("");
+	}
+
+	.gallery {
+		height: 400px;
+		width: 400px;
+		float: left;
+	}
+
+	#pic-1 {
+		background-image: url("");
+		background-size: cover;
+	}
+
+	footer {
+		clear: both;
+		background-color: orange;
+	}
+}
